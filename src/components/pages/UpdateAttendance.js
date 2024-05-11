@@ -79,7 +79,8 @@ const UpdateAttendance = () => {
                                     top: '30px',
                                     left: '30px',
                                     fontSize: '40px',   
-                                }}/>
+                                }}
+                        />
                 </div>
                 
                 <div className='edit-form'>
@@ -116,7 +117,7 @@ const UpdateAttendance = () => {
                     <Paper
                         component="form"
                         sx={{
-                            marginTop: '12px',
+                            marginTop: '16px',
                             marginLeft: '12px',
                             p: '10px 4px',
                             display: 'flex',
@@ -147,7 +148,7 @@ const UpdateAttendance = () => {
                     <Paper
                         component="form"
                         sx={{
-                            marginTop: '12px',
+                            marginTop: '16px',
                             marginLeft: '12px',
                             p: '10px 4px',
                             display: 'flex',
@@ -178,7 +179,7 @@ const UpdateAttendance = () => {
                     <Paper
                         component="form"
                         sx={{
-                            marginTop: '12px',
+                            marginTop: '16px',
                             marginLeft: '12px',
                             p: '10px 4px',
                             display: 'flex',
@@ -212,7 +213,7 @@ const UpdateAttendance = () => {
                                          width: 350,
                                          borderRadius: '30px',
                                          marginLeft: '12px',
-                                         marginTop: '40px'
+                                         marginTop: '60px'
                                         }}
                                 onClick={handleSubmit}>
                                     Submit</Button>
