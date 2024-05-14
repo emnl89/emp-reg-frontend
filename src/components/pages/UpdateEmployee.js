@@ -7,11 +7,13 @@ import AccountCircleRoundedIcon from '@mui/icons-material/AccountCircleRounded';
 import EngineeringRoundedIcon from '@mui/icons-material/EngineeringRounded';
 import MoreTimeRoundedIcon from '@mui/icons-material/MoreTimeRounded';
 import SavingsRoundedIcon from '@mui/icons-material/SavingsRounded';
+import { useNavigate } from 'react-router-dom';
 
 const UpdateEmployee = () => {
 
     const urlParams = new URLSearchParams(window.location.search);
     const id = urlParams.get("id");
+    const navigate = useNavigate();
     const [employee, setEmployee] = useState({
         empId: id,
         name: "Anto Alex",
@@ -19,6 +21,10 @@ const UpdateEmployee = () => {
         overtimeRate: 4,
         dueAmount: 1000
     });
+
+    const goBack = () => {
+        navigate(-1);
+    }
 
     const handleKeyPress = (event) => {
         if(event.key === 'Enter'){
@@ -80,7 +86,8 @@ const UpdateEmployee = () => {
                                     top: '30px',
                                     left: '30px',
                                     fontSize: '40px',   
-                                }}/>
+                                }}
+                            onClick={goBack}/>
                 </div>
                 
                 <div className='edit-form'>

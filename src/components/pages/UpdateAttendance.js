@@ -6,18 +6,24 @@ import TodayRoundedIcon from '@mui/icons-material/TodayRounded';
 import WorkRoundedIcon from '@mui/icons-material/WorkRounded';
 import MoreTimeRoundedIcon from '@mui/icons-material/MoreTimeRounded';
 import MoneyRoundedIcon from '@mui/icons-material/MoneyRounded';
+import { useNavigate } from 'react-router-dom';
 
 const UpdateAttendance = () => {
 
     const urlParams = new URLSearchParams(window.location.search);
     const id = urlParams.get("id");
     const date = urlParams.get("date");
+    const navigate = useNavigate();
     const [attendance, setAttendance] = useState({
         date: date,
         work: 5,
         overtime: 4,
         advance: 1000
     });
+
+    const goBack = () => {
+        navigate(-1);
+    }
 
     const handleKeyPress = (event) => {
         if(event.key === 'Enter'){
@@ -80,6 +86,7 @@ const UpdateAttendance = () => {
                                     left: '30px',
                                     fontSize: '40px',   
                                 }}
+                            onClick={goBack}
                         />
                 </div>
                 

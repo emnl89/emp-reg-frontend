@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
 // import api from '../api/axiosConfig';
-import { Button, ThemeProvider, createTheme } from '@mui/material';
+import { Button, Fab, ThemeProvider, createTheme } from '@mui/material';
 import { DataGrid } from '@mui/x-data-grid';
 import { useNavigate } from 'react-router-dom';
 import emptyFolder from '../../assets/empty-folder.jpg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUserPlus } from '@fortawesome/free-solid-svg-icons';
 
 const Registry = () => {
 
@@ -15,6 +17,10 @@ const Registry = () => {
       console.log('Button clicked for row Id: ', id);
       navigate(`/updateEmployee?id=${id}`);
     };
+
+  const handleAddButtonClick = () => {
+    navigate("/addEmployee");
+  }
   
   const columns = [
       { field: 'id',
@@ -142,6 +148,16 @@ const Registry = () => {
             boxShadow: '0 0 20px rgba(0, 0, 0, 0.2)',
             overflow: 'hidden',
           }}>
+              <Fab
+                color='primary'
+                aria-label='add'
+                style={{ position: 'absolute', 
+                         bottom: '50px',
+                         right: '300px',
+                         zIndex: 1000}}
+                       onClick={handleAddButtonClick}>
+                <FontAwesomeIcon icon={faUserPlus}/>
+              </Fab>
             <DataGrid
             sx={{
               border: 'none',
