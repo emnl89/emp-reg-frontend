@@ -4,6 +4,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
   margin-top: 10px;
 }
 
@@ -22,6 +25,9 @@
   text-align: center;
   display: flex;
   justify-content: center;
+  position: fixed;
+  top: 70px;
+  width: 100%;
 }
 
 .menu a{
@@ -41,26 +47,31 @@
 
 .home {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-top: 10px;
   font-family: "Reem Kufi", sans-serif;
 }
 
+.home .primary-text {
+  margin-top: 10px;
+  width: 500px;
+} 
+
 .banner-image {
-  background-image: url("./assets/background.jpg");
-  background-size: cover;
-  background-position: center;
+  background-image: url("./assets/office.jpg");
+  background-size: contain;
   background-repeat: no-repeat;
-  width: 100vw;
+  background-position: center;
+  width: 50vw;
   height: 100vh;
-  position: fixed;
   top: 0;
   left: 0;
   z-index: -2;
 }
 
-.primary-heading {
+.home h1 {
   font-size: clamp(2rem, 3vw, 4rem);
   color: #4c4c4c;
   max-width: 800px;
@@ -75,7 +86,7 @@
   width: 40vw;
 }
 
-.primary-text {
+.home p {
   font-size: clamp(1rem, 3vw, 1.5rem);
   max-width: 800px;
   color: #6a6a6a;
@@ -171,4 +182,8 @@
 .edit-form h1 {
   font-family: "Reem Kufi", sans-serif;
   color: #818283;
+}
+
+.login {
+  
 }
