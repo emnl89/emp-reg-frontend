@@ -125,7 +125,7 @@ const EmployeeDetails = () => {
     <Paper
       component="form"
       sx={{
-        marginTop: '6%',
+        marginTop: '120px',
         p: '2px 4px',
         display: 'flex',
         alignItems: 'center',
