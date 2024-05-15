@@ -44,7 +44,7 @@ export const RenderMenu = () => {
             })}
             { user.isAuthenticated ? (
                 <div className="menu-item">
-                    <Link to={"#"} onClick={logout}>Log out</Link>
+                    <Link to={"/"} onClick={logout}>Log out</Link>
                 </div>
             ) : (
                 <div className="menu-item">
