@@ -13,8 +13,6 @@ import Service from '../pages/Service'
 
 const nav = [
     {path: "/",                  name: "Home",              element: <Home/>,             isMenu: true,  isPrivate: false},
-    {path: "/about",             name: "About",             element: <About/>,            isMenu: true,  isPrivate: false},
-    {path: "/services",          name: "Services",          element: <Service/>,          isMenu: true,  isPrivate: false},
     {path: "/login",             name: "Log In",            element: <Login/>,            isMenu: false, isPrivate: false},
     {path: "/signUp",            name: "Sign Up",           element: <SignUp/>,           isMenu: false, isPrivate: false},
     {path: "/account",           name: "Account",           element: <Account/>,          isMenu: true,  isPrivate: true},
