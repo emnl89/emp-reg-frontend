@@ -159,7 +159,7 @@
   z-index: -4;
 }
 
-.image-container {
+.update-att-page .image-container {
   background-image: url("./assets/editAttendance.jpg");
   background-size: cover;
   background-position: center;
@@ -171,11 +171,12 @@
 }
 
 .edit-form {
-  padding: 20px;
+  padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-left: 40px;
 }
 
 .edit-form h1 {
@@ -183,9 +184,15 @@
   color: #818283;
 }
 
+<<<<<<< HEAD
 /* Login Page */
 
 .login {
+=======
+/* update Employee */
+
+.update-emp-page {
+>>>>>>> main
   background-image: radial-gradient(circle, #ededed, #eceded, #ececed, #ebeced, #eaecec);
   position: fixed;
   width: 100vw;
@@ -198,6 +205,7 @@
   align-items: center;
 }
 
+<<<<<<< HEAD
 .login .form-container {
   display: flex;
   flex-direction: row;
@@ -223,4 +231,41 @@
   margin-top: 70px;
   height: 60vh;
   width: 30vw;
+=======
+.update-emp-page .image-container {
+  background-image: url("./assets/editEmployee.jpg");
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  z-index: -2;
+  height: 100%;
+  width: 30vw;
+}
+
+/* Add Employee form */
+
+.add-emp-page {
+  background-image: radial-gradient(circle, #ededed, #eceded, #ececed, #ebeced, #eaecec);
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  top: 0;
+  left: 0;
+  z-index: -3;
+  justify-content: center;
+  align-items: center; 
+}
+
+.add-emp-page .image-container {
+  background-image: url("./assets/createEmployee.jpg");
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  z-index: -2;
+  height: 100%;
+  width: 30vw;  
+>>>>>>> main
 }

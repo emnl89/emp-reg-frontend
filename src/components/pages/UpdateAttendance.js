@@ -6,18 +6,24 @@ import TodayRoundedIcon from '@mui/icons-material/TodayRounded';
 import WorkRoundedIcon from '@mui/icons-material/WorkRounded';
 import MoreTimeRoundedIcon from '@mui/icons-material/MoreTimeRounded';
 import MoneyRoundedIcon from '@mui/icons-material/MoneyRounded';
+import { useNavigate } from 'react-router-dom';
 
 const UpdateAttendance = () => {
 
     const urlParams = new URLSearchParams(window.location.search);
     const id = urlParams.get("id");
     const date = urlParams.get("date");
+    const navigate = useNavigate();
     const [attendance, setAttendance] = useState({
         date: date,
         work: 5,
         overtime: 4,
         advance: 1000
     });
+
+    const goBack = () => {
+        navigate(-1);
+    }
 
     const handleKeyPress = (event) => {
         if(event.key === 'Enter'){
@@ -79,7 +85,9 @@ const UpdateAttendance = () => {
                                     top: '30px',
                                     left: '30px',
                                     fontSize: '40px',   
-                                }}/>
+                                }}
+                            onClick={goBack}
+                        />
                 </div>
                 
                 <div className='edit-form'>
@@ -116,7 +124,7 @@ const UpdateAttendance = () => {
                     <Paper
                         component="form"
                         sx={{
-                            marginTop: '12px',
+                            marginTop: '16px',
                             marginLeft: '12px',
                             p: '10px 4px',
                             display: 'flex',
@@ -147,7 +155,7 @@ const UpdateAttendance = () => {
                     <Paper
                         component="form"
                         sx={{
-                            marginTop: '12px',
+                            marginTop: '16px',
                             marginLeft: '12px',
                             p: '10px 4px',
                             display: 'flex',
@@ -178,7 +186,7 @@ const UpdateAttendance = () => {
                     <Paper
                         component="form"
                         sx={{
-                            marginTop: '12px',
+                            marginTop: '16px',
                             marginLeft: '12px',
                             p: '10px 4px',
                             display: 'flex',
@@ -212,7 +220,7 @@ const UpdateAttendance = () => {
                                          width: 350,
                                          borderRadius: '30px',
                                          marginLeft: '12px',
-                                         marginTop: '40px'
+                                         marginTop: '60px'
                                         }}
                                 onClick={handleSubmit}>
                                     Submit</Button>

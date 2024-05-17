@@ -16,7 +16,7 @@ const Attendance = () => {
   const navigate = useNavigate();
 
   const handleButtonClick = (id) => {
-    navigate(`updateAttendance?id=${id}&date=${date}`);
+    navigate(`/updateAttendance?id=${id}&date=${date}`);
   };
 
   
@@ -65,7 +65,7 @@ const Attendance = () => {
       width: 150,
       renderCell: (params) => (
         <div>
-          <Button onClick={() => handleButtonClick(params.row.empId)}>
+          <Button onClick={() => handleButtonClick(params.row.id)}>
             Edit
           </Button>
         </div>
