@@ -15,7 +15,7 @@ const Authwrapper = () => {
                 setUser({name: userName, isAuthenticated: true})
                 resolve("success")
             } else {
-                reject("Incorrect Password")
+                reject("User Name or Password Incorrect Please try again!!")
             }
         })
     }
