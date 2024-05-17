@@ -184,15 +184,9 @@
   color: #818283;
 }
 
-<<<<<<< HEAD
-/* Login Page */
-
-.login {
-=======
 /* update Employee */
 
 .update-emp-page {
->>>>>>> main
   background-image: radial-gradient(circle, #ededed, #eceded, #ececed, #ebeced, #eaecec);
   position: fixed;
   width: 100vw;
@@ -205,33 +199,6 @@
   align-items: center;
 }
 
-<<<<<<< HEAD
-.login .form-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-  position: relative;
-  border: none;
-  border-radius: 0;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  width: 60vw;
-  height: 80vh;
-  margin-top: 80px;
-  z-index: -4;
-}
-
-.login .image-container {
-  background-image: url("./assets/login.jpg");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-radius: 0;
-  z-index: -2;
-  margin-top: 70px;
-  height: 60vh;
-  width: 30vw;
-=======
 .update-emp-page .image-container {
   background-image: url("./assets/editEmployee.jpg");
   background-size: cover;
@@ -267,5 +234,65 @@
   z-index: -2;
   height: 100%;
   width: 30vw;  
->>>>>>> main
+}
+
+/* Login Page */
+
+.login {
+  background-image: radial-gradient(circle, #ededed, #eceded, #ececed, #ebeced, #eaecec);
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  top: 0;
+  left: 0;
+  z-index: -3;
+  justify-content: center;
+  align-items: center;
+}
+
+.login .form-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+  border: none;
+  border-radius: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 60vw;
+  height: 80vh;
+  margin-top: 100px;
+  z-index: -4;
+}
+
+.login .image-container {
+  background-image: url("./assets/login.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 0;
+  z-index: -2;
+  margin-top: 70px;
+  height: 60vh;
+  width: 30vw;
+}
+
+.login .heading {
+  font-family: "Reem Kufi", sans-serif;
+  text-align: center;
+  color: #818283;
+}
+
+.error-message {
+  width: 310px;
+  margin-top: 16px;
+  margin-left: 12px;
+  background-color: #ff0000;
+}
+
+.login a {
+  display: flex;
+  margin-top: 16px;
+  margin-left: 12px;
 }
